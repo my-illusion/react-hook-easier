@@ -28,6 +28,13 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/my-illusion/react-hook-easier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/my-illusion/react-hook-easier"
+  },
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/plugin-syntax-dynamic-import": "^7.7.4",
