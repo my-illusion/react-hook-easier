@@ -1,13 +1,13 @@
 //import React from 'react';
 
 export interface defaultConfig {
-  averageNum: number;
-  hasSelectedRowkeys: boolean;
-  tableWidth: number;
-  bordered: boolean;
-  scrollbarWith: number;
+  averageNum?: number;
+  hasSelectedRowkeys?: boolean;
+  tableWidth?: number;
+  bordered?: boolean;
+  scrollbarWith?: number;
   padding?: number;
-  anchorWidth: number;
+  anchorWidth?: number;
 }
 
 export interface TableUtils {
