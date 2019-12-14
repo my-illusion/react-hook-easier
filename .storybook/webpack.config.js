@@ -23,6 +23,22 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(tsx)$/,
+        include: [SRC_PATH],
+        loader: require.resolve('babel-loader'),
+        options: {
+          plugins: [
+            // 引入样式为 css
+            // style为true 则默认引入less
+            ['import', { libraryName: 'antd', style: 'css' }],
+          ],
+        },
+      },
+      {
+        test: /\.(css)$/,
+        use: [require.resolve('style-loader'), require.resolve('css-loader')],
+      },
     ],
   },
   resolve: {
