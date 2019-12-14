@@ -30,7 +30,8 @@
   "license": "ISC",
   "peerDependencies": {
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "antd": "^3.22.2"
   },
   "repository": {
     "type": "git",
@@ -71,6 +72,7 @@
     "typescript": "^3.7.3"
   },
   "dependencies": {
+    "antd": "^3.26.2",
     "tslib": "^1.10.0"
   },
   "jest": {
