@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
-import { Table } from 'antd';
+import { Table, Tooltip } from 'antd';
 
 import ShowDocs from './utils/ShowDocs';
 import { useAntdTableColumn } from '..';
@@ -40,7 +40,7 @@ const dataSource = [
   },
   {
     key: 5,
-    title_1: 'test data....',
+    title_1: 'test data1............................',
     title_2: 'test data....',
     title_3: 'test data....',
     title_4: 'test data....',
@@ -56,9 +56,26 @@ const dataSource = [
   },
 ];
 
+const renderCustom = (text, record, index, width) => (
+  <Tooltip placement="top" title={text}>
+    <div
+      style={{
+        width: '100%',
+        overflow: 'hidden',
+        whiteSpace: 'nowrap',
+        textOverflow: 'ellipsis',
+      }}
+      title={text}
+    >
+      {text}
+    </div>
+  </Tooltip>
+);
+
 const Demo = () => {
   const { scrollX, render } = useAntdTableColumn({
     averageNum: 5,
+    hasSelectedRowkeys: true,
   });
 
   const columns = [
@@ -66,6 +83,9 @@ const Demo = () => {
       title: '标题一',
       dataIndex: 'title_1',
       ...render(200),
+      render: (text, record, index) => {
+        return renderCustom(text, record, index, 200);
+      },
     },
     {
       title: '标题二',
@@ -89,15 +109,20 @@ const Demo = () => {
       ...render(300),
     },
   ];
-  console.log(scrollX);
+
   return (
     <div>
       <Table
         columns={columns}
         dataSource={dataSource}
+        //bordered
+        rowSelection={{
+          selectedRowKeys: [],
+          onChange: () => {},
+        }}
         scroll={{
           x: scrollX,
-          y: 100,
+          y: 200,
         }}
       />
     </div>

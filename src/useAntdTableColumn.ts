@@ -1,5 +1,3 @@
-//import React from 'react';
-
 export interface defaultConfig {
   averageNum?: number;
   hasSelectedRowkeys?: boolean;
@@ -36,7 +34,7 @@ export default (config: defaultConfig = DEFAULT_CONFIG): TableUtils => {
   const scrollX: number = tableWidth - rowKeysWidth - scrollbarWith;
   const diff = Math.floor((scrollX - anchorWidth) / averageNum);
   return {
-    scrollX: scrollX,
+    scrollX: scrollX + rowKeysWidth,
     render: width => ({
       width: width + diff,
     }),
