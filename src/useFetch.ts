@@ -3,7 +3,7 @@ import { useContext, useState, useEffect } from 'react';
 import { http } from './lib';
 import fetchConfigContext from './fetchConfigContext';
 
-const enum methodEnum {
+export const enum methodEnum {
   'POST',
   'GET',
 }

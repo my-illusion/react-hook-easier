@@ -5,6 +5,8 @@ export { default as useAntdTableColumn } from './useAntdTableColumn';
 export { default as useCache } from './useCache';
 
 export { default as usePagination } from './usePagination';
+
+export { default as useFetch } from './useFetch';
 // var fs = require('fs');
 // var path = require('path');
 // fs.readdirSync('./').forEach(function(node) {
