@@ -7,20 +7,16 @@ export { default as useCache } from './useCache';
 export { default as usePagination } from './usePagination';
 
 export { default as useFetch } from './useFetch';
-// var fs = require('fs');
-// var path = require('path');
-// fs.readdirSync('./').forEach(function(node) {
-//   var info = fs.statSync('.' + '/' + node);
-//   if (info.isDirectory() || node.includes('index')) {
-//     return;
-//   } else {
-//     console.log(node.default);
-//     //const moduleName = node.replace(/\.ts$/, '');
-//   }
-// });
 
-// module.exports = {
-//   createMemo: () => {},
-//   useAntdTableColumn: () => {},
-//   useCache: () => {},
-// };
+export { default as useScrollPenetration } from './useScrollPenetration';
+
+// const modulesFiles = require.context("./", true, /\.js$/)
+
+// const modules = modulesFiles.keys().reduce((modules, modulePath) => {
+//   const moduleName = modulePath.replace(/^\.\/(.*)\.\w+$/, "$1");
+//   const value = modulesFiles(modulePath);
+//   modules[moduleName] = value.default;
+//   return modules;
+// }, {});
+
+// module.exports = modules;
