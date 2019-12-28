@@ -16,7 +16,10 @@
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
     "outDir": "lib",
-    "lib": ["es2018", "dom"],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
     "importHelpers": true
   },
   "exclude": [
@@ -26,6 +29,6 @@
     "**/__tests__/**/*",
     "**/__stories__/**/*",
     "*.test.ts",
-    "*.test.tsx"
+    "*.test.tsx",
   ]
 }
