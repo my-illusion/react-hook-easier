@@ -10,6 +10,8 @@ export { default as useFetch } from './useFetch';
 
 export { default as useScrollPenetration } from './useScrollPenetration';
 
+export { default as useUpdateEffect } from './useUpdateEffect';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
