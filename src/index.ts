@@ -12,6 +12,8 @@ export { default as useScrollPenetration } from './useScrollPenetration';
 
 export { default as useUpdateEffect } from './useUpdateEffect';
 
+export { default as useResize } from './useResize';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
