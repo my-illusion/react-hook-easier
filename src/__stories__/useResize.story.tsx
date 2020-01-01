@@ -4,9 +4,6 @@ import * as React from 'react';
 import { useResize } from '..';
 import ShowDocs from './utils/ShowDocs';
 
-const { useState } = React;
-
-
 const Demo = () => {
 
   const [state, elementRef] = useResize<HTMLDivElement>();
