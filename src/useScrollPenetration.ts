@@ -18,7 +18,7 @@ export default (toggle: boolean): void => {
       document.body.style.overflowY = '';
       document.body.style.position = '';
       if (scrollTop !== 0) {
-        document.body.scrollTo(0, scrollTop)
+        document.body.scrollTo(0, scrollTop);
       }
     }
   }, [toggle]);

@@ -18,7 +18,7 @@ class Stack extends Array {
   }
 
   constructor(...args) {
-    super(...args)
+    super(...args);
   }
 
   get size() {
@@ -37,13 +37,13 @@ const cacheSelectors = new WeakMap();
 const getFinalAction = action => {
   return typeof action === 'string'
     ? {
-      type: STRING_CHANGE_TYPE,
-      payload: action,
-    }
+        type: STRING_CHANGE_TYPE,
+        payload: action,
+      }
     : {
-      ...action,
-      type: action.type || CHANGE_TYPE,
-    };
+        ...action,
+        type: action.type || CHANGE_TYPE,
+      };
 };
 
 const defaultReducer = (state, action) => {

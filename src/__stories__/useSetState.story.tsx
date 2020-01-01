@@ -23,11 +23,14 @@ const Demo = () => {
     <div>
       <Button onClick={() => {
         setName("world");
-        setTimeout(() => {
-          setCount(count => {
-            return count + 1;
-          });
-        }, 500);
+        // setTimeout(() => {
+        //   setCount(count => {
+        //     return count + 1;
+        //   });
+        // }, 500);
+        setCount(count => {
+          return count + 1;
+        });
       }}>先更新name再更新count</Button>{count.current} --- {name}<br />
     </div>
   )

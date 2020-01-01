@@ -4,7 +4,11 @@ type RefObject<T> = {
   current: T | null;
 };
 
-export default (fn: () => any, dep: any[] = [], type: "effect" | "layoutEffect" = "effect") => {
+export default (
+  fn: () => any,
+  dep: any[] = [],
+  type: 'effect' | 'layoutEffect' = 'effect'
+) => {
   const updateRef: RefObject<boolean> = useRef(false);
   const useDecisionEffect = type === 'effect' ? useEffect : useLayoutEffect;
 
@@ -16,6 +20,6 @@ export default (fn: () => any, dep: any[] = [], type: "effect" | "layoutEffect" 
     const destroy = fn();
     return () => {
       destroy && destroy();
-    }
+    };
   }, [...dep]);
 };
