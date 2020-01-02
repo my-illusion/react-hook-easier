@@ -16,6 +16,8 @@ export { default as useResize } from './useResize';
 
 export { default as useSetState } from './useSetState';
 
+export { default as useFetchQueue } from './useFetchQueue';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
