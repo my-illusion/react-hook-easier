@@ -5,3 +5,7 @@ export const isString = (arg): arg is string => {
 export const isUndefined = (value): value is undefined => {
   return typeof value === undefined;
 };
+
+export const isFunction = (value): value is Function => {
+  return typeof value === 'function';
+};
