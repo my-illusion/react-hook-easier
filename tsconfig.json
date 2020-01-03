@@ -14,12 +14,10 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noImplicitAny": false,
+    "noImplicitThis": false,
     "noFallthroughCasesInSwitch": true,
     "outDir": "lib",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "importHelpers": true
   },
   "exclude": [

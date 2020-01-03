@@ -18,6 +18,8 @@ export { default as useSetState } from './useSetState';
 
 export { default as useFetchQueue } from './useFetchQueue';
 
+export { default as useThrottle } from './useThrottle';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
