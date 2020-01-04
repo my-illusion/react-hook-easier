@@ -7,11 +7,11 @@ function useThrottle(fn, delay: number) {
     clearTimeout(time);
     let remaining = delay - (now - previous);
     if (remaining <= 0) {
-      fn.apply(that, args);
+      fn.apply(that, ...args);
       previous = now;
     } else {
       time = setTimeout(() => {
-        fn.apply(that, args);
+        fn.apply(that, ...args);
       }, remaining);
     }
   };
