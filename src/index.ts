@@ -22,6 +22,8 @@ export { default as useThrottle } from './useThrottle';
 
 export { default as useDebounce } from './useDebounce';
 
+export { default as useForceUpdate } from './useForceUpdate';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
