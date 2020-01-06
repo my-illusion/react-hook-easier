@@ -26,6 +26,8 @@ export { default as useForceUpdate } from './useForceUpdate';
 
 export { default as useImmer } from './useImmer';
 
+export { default as useImageToBase64 } from './useImageToBase64';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
