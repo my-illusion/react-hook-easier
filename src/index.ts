@@ -28,6 +28,8 @@ export { default as useImmer } from './useImmer';
 
 export { default as useImageToBase64 } from './useImageToBase64';
 
+export { default as useImmutableHelper } from './useImmutableHelper';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
