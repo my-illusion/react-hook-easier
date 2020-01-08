@@ -30,6 +30,8 @@ export { default as useImageToBase64 } from './useImageToBase64';
 
 export { default as useImmutableHelper } from './useImmutableHelper';
 
+export { default as useEventEmitter } from './useEventEmitter';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
