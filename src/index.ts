@@ -34,6 +34,8 @@ export { default as useEventEmitter } from './useEventEmitter';
 
 export { default as useCallbackEffectWithParams } from './useCallbackEffectWithParams';
 
+export * from './useRedux';
+
 export * from './useInjectContext';
 
 // const modulesFiles = require.context("./", true, /\.js$/)
