@@ -34,6 +34,8 @@ export { default as useEventEmitter } from './useEventEmitter';
 
 export { default as useCallbackEffectWithParams } from './useCallbackEffectWithParams';
 
+export { default as useCurryFn } from './useCurryFn';
+
 export * from './useRedux';
 
 export * from './useInjectContext';
