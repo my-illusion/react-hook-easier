@@ -36,6 +36,8 @@ export { default as useCallbackEffectWithParams } from './useCallbackEffectWithP
 
 export { default as useCurryFn } from './useCurryFn';
 
+export { default as useWebWorker } from './useWebWorker';
+
 export * from './useRedux';
 
 export * from './useInjectContext';
