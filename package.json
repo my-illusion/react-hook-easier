@@ -32,7 +32,8 @@
     "antd": "^3.22.2",
     "immer": ">=2.0.0",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "immutability-helper": "3.0.1"
   },
   "repository": {
     "type": "git",
