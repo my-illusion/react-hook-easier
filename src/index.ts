@@ -40,6 +40,8 @@ export { default as useWebWorker } from './useWebWorker';
 
 export { default as useErrorBoundary } from './useErrorBoundary';
 
+export { default as useStack } from './useStack';
+
 export * from './useRedux';
 
 export * from './useInjectContext';
