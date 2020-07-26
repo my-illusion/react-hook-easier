@@ -34,4 +34,6 @@ export { default as useErrorBoundary } from './useErrorBoundary';
 
 export { default as useStack } from './useStack';
 
+export { default as useScrollTo } from './useScrollTo'
+
 export * from './useInjectContext';
